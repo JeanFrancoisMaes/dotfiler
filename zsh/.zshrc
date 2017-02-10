@@ -1,8 +1,6 @@
 source /home/jean/antigen.zsh
 
-if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
-fi
+
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
