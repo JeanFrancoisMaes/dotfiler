@@ -1,5 +1,9 @@
 source /home/jean/antigen.zsh
 
+if command -v tmux>/dev/null; then
+  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+fi
+
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
 
@@ -13,7 +17,7 @@ antigen bundle colorize
 antigen bundle colored-man-pages
 antigen bundle command-not-found
 antigen bundle cp
-
+antigen bundle web-search
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
