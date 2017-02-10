@@ -9,6 +9,11 @@ antigen bundle heroku
 antigen bundle pip
 antigen bundle lein
 antigen bundle command-not-found
+antigen bundle colorize
+antigen bundle colored-man-pages
+antigen bundle command-not-found
+antigen bundle cp
+
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
