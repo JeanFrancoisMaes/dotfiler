@@ -1,6 +1,9 @@
 source /home/jean/antigen.zsh
 
 
+#setup a path to dotfiler
+
+PATH=$PATH:/home/jean/dotfiler/bin
 
 # Load the oh-my-zsh's library.
 antigen use oh-my-zsh
